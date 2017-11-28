@@ -47,7 +47,7 @@ def parse_html(course_url):
     file_name="{0}/{1}.{2}.flv".format(course_name,course_seq,vedio_name)
     tmp_name="{0}/{1}.flv".format(course_name,course_seq)
     if os.path.exists(file_name):
-        print("......{0}.{1} 已下载完成\n".format(course_seq,course_name))
+        print("......{0}.{1} 已下载完成\n".format(course_seq,vedio_name))
         return
     time_start=time.time()
     with open(tmp_name,"wb+") as f:
